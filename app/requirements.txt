@@ -1,0 +1,6 @@
+langchain-groq
+langchain-openai
+streamlit
+chromadb
+chunking_evaluation
+dotenv
