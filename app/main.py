@@ -23,7 +23,7 @@ embeddings = AzureOpenAIEmbeddings(
 
 
 # Initialize ChromaDB client
-client = chromadb.HttpClient(host="localhost", port=8000)
+client = chromadb.HttpClient(host="chroma", port=8000)
 
 # Check ChromaDB connection
 if not (ret := client.heartbeat()):
@@ -41,7 +41,7 @@ collection = client.get_or_create_collection("romeo_and_juliet")
 system_message = SystemMessage(
     content="""
 You are a helpful assistant that answers questions based on the context
-provided in the ChromaDB collection named 'war_and_peace'.
+provided in the ChromaDB collection named 'Romeo and Juliet'.
 If the context does not contain enough information to answer the question,
 you should say "I don't have enough information to answer that question."
 Never make up answers or include information not found in the context.

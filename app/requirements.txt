@@ -2,5 +2,6 @@ langchain-groq
 langchain-openai
 streamlit
 chromadb
-chunking-evaluation https://github.com/brandonstarxel/chunking_evaluation.git
+git+https://github.com/brandonstarxel/chunking_evaluation.git#egg=chunking-evaluation
+
 dotenv
