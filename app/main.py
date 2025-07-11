@@ -35,7 +35,7 @@ else:
     )
 
 # Get or create collection
-collection = client.get_or_create_collection("war_and_peace1")
+collection = client.get_or_create_collection("romeo_and_juliet")
 
 # Initial system instruction
 system_message = SystemMessage(
